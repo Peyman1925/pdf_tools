@@ -1,0 +1,16 @@
+<!-- pdf_app/templates/pdf_app/extract_file.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract File from Images</title>
+</head>
+<body>
+    <h1>Extract File from Images</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Extract File</button>
+    </form>
+</body>
+</html>

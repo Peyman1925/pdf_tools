@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Manager</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <h1>PDF Manager</h1>
+    <ul>
+        <li><a href="{% url 'merge_pdfs' %}">Merge PDFs</a></li>
+        <li><a href="{% url 'split_pdf' %}">Split PDF</a></li>
+        <li><a href="{% url 'extract_pages' %}">Extract Pages from PDF</a></li>
+        <li><a href="{% url 'encrypt_pdf' %}">Encrypt PDF</a></li>
+        <li><a href="{% url 'hide' %}">Hide File</a></li>
+        <li><a href="{% url 'efi' %}">Extract Files from Image</a></li>
+    </ul>
+
+</body>
+</html>
